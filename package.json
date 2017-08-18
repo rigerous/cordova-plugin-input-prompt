@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-input-prompt",
+  "version": "1.0.0",
+  "description": "Cordova Input Prompt Plugin",
+  "cordova": {
+    "id": "cordova-plugin-input-prompt",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rigerous/cordova-plugin-input-prompt"
+  },
+  "keywords": [
+    "cordova",
+    "inputPrompt",
+    "input prompt",
+    "input",
+    "dialog",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=4.0.0-dev"
+    }
+  ],
+  "author": "Apache Software Foundation",
+  "license": "Apache 2.0"
+}

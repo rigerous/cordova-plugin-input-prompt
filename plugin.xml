@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-input-prompt"
+        version="1.0.0">
+    <name>Input Prompt</name>
+    <description>Cordova Plugin that displays Input Prompt Dialog</description>
+    <license>MIT</license>
+    <keywords>cordova,input prompt,input</keywords>
+
+
+    <js-module src="www/inputPrompt.js" name="InputPrompt">
+        <clobbers target="cordova.plugins.inputPrompt" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="InputPrompt">
+                <param name="android-package" value="com.inputPrompt.InputPrompt"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/InputPrompt.java" target-dir="src/com/inputPrompt" />
+        <resource-file src="src/android/res/layout/window.xml" target="res/layout/window.xml" />
+    </platform>
+</plugin>
