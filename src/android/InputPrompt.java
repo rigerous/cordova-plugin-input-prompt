@@ -30,14 +30,6 @@ public class InputPrompt extends CordovaPlugin {
                 final String okbuttontext = arg_object.getString("okbuttontext");
                 final String cancelbuttontext = arg_object.getString("cancelbuttontext");
 
-                // final View viewInflated = LayoutInflater.from(cordova.getActivity()).inflate(
-                //     cordova.getActivity().getResources().getIdentifier("editTextDialogUserInput", "id", cordova.getActivity().getPackageName()),
-                //     (ViewGroup) findViewById(
-                //         cordova.getActivity().getResources().getIdentifier("window", "layout", cordova.getActivity().getPackageName())
-                //     ),
-                //     false
-                // );
-
                 cordova.getActivity().runOnUiThread(new Runnable() {
                     public void run() {
                         AlertDialog.Builder dlg = new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
