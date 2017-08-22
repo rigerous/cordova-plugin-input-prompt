@@ -1,4 +1,4 @@
-var inputPrompt = function(successCallback, errorCallback, title, placeholder, okbuttontext, cancelbuttontext){
+var inputPrompt = function(successCallback, errorCallback, title, placeholder, okbuttontext, cancelbuttontext, value){
     
     cordova.exec(
             successCallback, // success callback function
@@ -9,7 +9,8 @@ var inputPrompt = function(successCallback, errorCallback, title, placeholder, o
                 "title": title,
                 "placeholder": placeholder,
                 "okbuttontext": okbuttontext,
-                "cancelbuttontext": cancelbuttontext
+                "cancelbuttontext": cancelbuttontext,
+                "value": value
             }]
         ); 
 }

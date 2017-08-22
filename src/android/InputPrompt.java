@@ -29,6 +29,7 @@ public class InputPrompt extends CordovaPlugin {
                 final String placeholder = arg_object.getString("placeholder");
                 final String okbuttontext = arg_object.getString("okbuttontext");
                 final String cancelbuttontext = arg_object.getString("cancelbuttontext");
+                final String value = arg_object.getString("value");
 
                 cordova.getActivity().runOnUiThread(new Runnable() {
                     public void run() {
@@ -45,6 +46,7 @@ public class InputPrompt extends CordovaPlugin {
                                 .findViewById(cordova.getActivity().getResources().getIdentifier("editTextDialogUserInput", "id", cordova.getActivity().getPackageName()));
 
                         userInput.setHint(placeholder);
+                        userInput.setText(value);
 
                         dlg.setView(windowView);
                         dlg.setPositiveButton(okbuttontext, new DialogInterface.OnClickListener() {
