@@ -47,6 +47,7 @@ public class InputPrompt extends CordovaPlugin {
 
                         userInput.setHint(placeholder);
                         userInput.setText(value);
+                        userInput.selectAll();
 
                         dlg.setView(windowView);
                         dlg.setPositiveButton(okbuttontext, new DialogInterface.OnClickListener() {
